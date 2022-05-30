@@ -1,0 +1,134 @@
+#auth-reg{
+    background-image: url("../../images/Background1.jpg");
+    background-size: cover;
+}
+
+.auth-reg_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-wrap {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 800px;
+    height: 500px;
+    box-shadow: 5px 5px 10px rgb(66, 113, 192), -5px -5px 10px rgb(0, 243, 166);
+}
+
+.form {
+    width: 450px;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-title {
+    text-align: center;
+    width: 450px;
+    height: 60px;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+    background: rgba(155, 255, 109 , 0.5);
+    animation: background 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 3px 1px 20px 1px rgb(255 236 0);
+}
+
+.sign-up-title {
+    text-align: center;
+    width: 450px;
+    height: 60px;
+    position: absolute;
+    top: -60px;
+    right: 0;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 20% 0%);
+    background: rgba(155, 255, 109 , 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 3px 1px 20px 1px rgb(255 236 0);
+}
+.sign-in-title h4,.sign-up-title h4{
+    font-size: 35px;
+}
+.form-wrap img {
+    width: 300px;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+}
+
+.form input {
+    margin-bottom: 80px;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 162, 255);
+    outline: none;
+    text-indent: 40px;
+}
+
+.form input::placeholder {
+    font-size: 20px;
+    color: rgb(0, 162, 255);
+    text-align: center;
+
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-wrap button {
+    padding: 5px 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    background-color: #45FFD5;
+    border: none;
+    cursor: pointer;
+}
+.btn-wrap button:first-child{
+    margin-right: 15px;
+}
+
+.username-input {
+    background-image: url("../../images/username.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 4px;
+}
+
+.password-input {
+    background-image: url("../../images/password.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 4px;
+}
+
+.email-input {
+    background-image: url("../../images/randomuser.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 4px;
+}

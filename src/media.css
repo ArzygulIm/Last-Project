@@ -1,0 +1,22 @@
+@media(max-width:1024px) {}
+
+@media(max-width:992px) {
+    .col-2 {
+        width: 25%;
+    }
+}
+
+@media(max-width:800px) {
+    .col-3 {
+        width: 50%;
+    }
+
+    .col-4 {
+        width: 50%;
+    }
+}
+
+@media(max-width:576px) {
+
+
+}

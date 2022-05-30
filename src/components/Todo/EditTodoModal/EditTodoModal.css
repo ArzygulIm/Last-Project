@@ -1,0 +1,135 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.backdropActive {
+    display: block;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.modalButton {
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    cursor: pointer;
+    width: 140px;
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 35%;
+    transition: transform 0.4s;
+    transform: scale(0);
+    z-index: 2;
+    color: red;
+    background-color: aquamarine;
+}
+
+.modalActive {
+    transform: scale(1);
+}
+
+.modalHeader {
+    background-color: #333;
+    height: 35px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modalHeaderTitle {
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.modalCloseButton {
+    position: relative;
+    width: 35px;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.modalCloseButton:hover {
+    background-color: red;
+}
+
+.modalCloseButton span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 15px;
+    height: 2px;
+    background-color: white;
+}
+
+.modalCloseButton span:first-child {
+    transform: rotate(45deg);
+}
+
+.modalCloseButton span:last-child {
+    transform: rotate(-45deg);
+}
+
+.modalContent {
+    padding: 35px;
+    overflow: auto;
+
+}
+#edit__todo-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#edit__todo-form input {
+    margin-bottom: 25px;
+    width: 90%;
+    height: 30px;
+    background-color: rgb(210, 255, 143);
+}
+
+#edit__todo-form input::placeholder {
+    font-size: 20px;
+    color: rgb(0, 0, 136);
+    font-style: italic;
+    font-weight: bold;
+}
+
+#edit__todo-form button {
+    width: 150px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
